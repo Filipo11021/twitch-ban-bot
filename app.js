@@ -48,12 +48,14 @@ client.on('message', (channel, tags, message, self) => {
       
       function banChatters(data) {
          
+         let random = Math.floor(Math.random() * 1000)
          data.forEach(e => {
-            const random = Math.floor(Math.random() * 1000)
             
             setTimeout(() => {
                client.say(channel, `/ban ${e}`)
             }, random)
+            
+            random += Math.floor(Math.random() * 1000)
             
          })
       }
