@@ -27,7 +27,7 @@ client.on('message', (channel, tags, message, self) => {
    if (self) return;
    const userMsg = message.toLowerCase()
    
-   const isMod = tags.mod || tags['tags-type'] === 'mod'
+   const isMod = tags.mod || tags['user-type'] === 'mod'
    const isBroadcaster = channel.slice(1) === tags.username
    const isModUp = isMod || isBroadcaster
 
