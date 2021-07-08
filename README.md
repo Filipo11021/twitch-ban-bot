@@ -16,6 +16,7 @@
 !command siema prefix/suffix/string
 siema nick
 
+----------------------------------------------
 
 1. Download https://nodejs.org/en/
 2. In .env enter username, password, streamer
